@@ -11,7 +11,7 @@ var common_1 = require("@nestjs/common");
 var botbye_nest_core_1 = require("botbye-nest-core");
 var botbye_node_express_1 = require("botbye-node-express");
 var botbye_node_core_1 = require("botbye-node-core");
-(0, botbye_node_core_1.initPackageInfo)({ name: "NodeJS - NestJS - Express", version: "0.1.0" });
+(0, botbye_node_core_1.initPackageInfo)({ name: "NodeJS - NestJS - Express", version: "0.1.1" });
 var BotByeModule = (function () {
     function BotByeModule() {
     }
@@ -20,7 +20,7 @@ var BotByeModule = (function () {
         return {
             module: BotByeModule_1,
             providers: (0, botbye_nest_core_1.getProvidersList)(options, botbye_node_express_1.validateRequest),
-            exports: (0, botbye_nest_core_1.getExports)(),
+            exports: (0, botbye_nest_core_1.getExports)()
         };
     };
     var BotByeModule_1;
